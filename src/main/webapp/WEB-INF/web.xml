@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>User Management Panel</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HomeServ</display-name>
+    <servlet-name>HomeServ</servlet-name>
+    <servlet-class>com.vanshalusermanagement.servlet.HomeServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServ</servlet-name>
+    <url-pattern>/usermanagement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddUser</display-name>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>databaseSchema.AddUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>/AddUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FetchData</display-name>
+    <servlet-name>FetchData</servlet-name>
+    <servlet-class>com.vanshalusermanagement.servlet.FetchData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchData</servlet-name>
+    <url-pattern>/fetchdata</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteUser</display-name>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>com.vanshalusermanagement.servlet.DeleteUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUser</servlet-name>
+    <url-pattern>/deleteuser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateUser</display-name>
+    <servlet-name>UpdateUser</servlet-name>
+    <servlet-class>com.vanshalusermanagement.servlet.UpdateUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUser</servlet-name>
+    <url-pattern>/updateuser</url-pattern>
+  </servlet-mapping>
+</web-app>
